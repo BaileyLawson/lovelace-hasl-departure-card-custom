@@ -1,8 +1,8 @@
 {
-    "name": "HASL Departure Card",
+    "name": "HASL Departure Card Custom",
     "content_in_root": false,
     "render_readme": false,
-    "filename": "hasl-departure-card.js",
+    "filename": "hasl-departure-card-custom.js",
     "homeassistant": "2021.12.0",
     "zip_release": false
 }
