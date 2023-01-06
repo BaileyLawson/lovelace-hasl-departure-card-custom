@@ -179,8 +179,8 @@ class HASLDepartureCard extends HTMLElement {
 
                                 html += `
                                     <tr>
-                                        <td class="col1 ${config.compact === false ? 'loose-icon' : ''}"><ha-icon icon="${entity_data.attributes.departures[j].icon}"></ha-icon></td>
-                                        <td class="col2 ${config.compact === false ? 'loose-cell loose-padding' : ''}"><span class="${spanClass}">${lineNumber}</span> ${destinationName}</td>
+                                        <td class="col1 ${config.compact === false ? 'loose-icon' : ''}"><span class="${spanClass}">${lineNumber}</span></td>
+                                        <td class="col2 ${config.compact === false ? 'loose-cell loose-padding' : ''}">${destinationName}</td>
                                         <td class="col3 ${config.compact === false ? 'loose-cell' : ''}">${config.timeleft === true ? departureInMinutes : departureTime}</td>
                                     </tr>
                                 `
@@ -416,7 +416,7 @@ class HASLDepartureCard extends HTMLElement {
             },
             'en-EN': {
                 entity_missing: 'Entity data missing',
-                line: 'Line',
+                line: 'Route',
                 destination: 'Destination',
                 departure: 'Departure',
                 min: 'min',
